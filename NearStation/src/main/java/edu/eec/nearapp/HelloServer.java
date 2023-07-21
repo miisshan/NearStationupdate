@@ -1,0 +1,23 @@
+package edu.eec.nearapp;
+import edu.eec.nearapp.NearApp;
+import io.undertow.Undertow;
+import io.undertow.server.HttpHandler;
+import io.undertow.server.HttpServerExchange;
+import io.undertow.util.Headers;
+
+public class HelloServer {
+    
+    
+    
+    public static void main(final String[] args) {
+
+        Undertow server = Undertow.builder()
+                .addHttpListener(8099, "localhost")
+                .setHandler(exchange -> {
+                    exchange.getResponseHeaders().put(Headers.CONTENT_TYPE, "text/plain");
+                    exchange.getResponseSender().send("Hello World");
+                }).build();
+        server.start();
+    }
+    
+}

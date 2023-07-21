@@ -1,0 +1,223 @@
+"id","Location","Longitude","Latitude","isStation"
+"1","Mahalaxmi","85.37099","27.64631",True
+"2","Harisiddhi","85.34027","27.63627",False
+"3","Dhobhighat","85.30601","27.67499",False
+"4","Ekantakuna","85.3094","27.66808",True
+"5","Chapagaon","85.32502","27.60252",False
+"6","Patan","85.31681","27.67673",False
+"7","Thecho","85.32067","27.61413",False
+"8","Sunakothi","85.31653","27.63496",False
+"9","Nakhipot","85.32076","27.65039",False
+"10","Balkumari","85.31841","27.63274",False
+"11","Dhapakhel","85.33235","27.62799",False
+"12","Bansbari","85.358821","27.740158",False
+"13","Teku","85.323105","27.70535",False
+"14","Gongabu","85.314803","27.735119",False
+"15","Airport","85.355915","27.696762",False
+"16","Lapse Bot","85.28609","27.651943",False
+"17","Kalanki_Mandir","85.291819","27.692618",True
+"18","Khasibazaar","85.309408","27.6927",True
+"19","Bhadrakali","85.334534","27.694824",False
+"20","Singhadurbar","85.320406","27.70428",False
+"21","Maharajgunj Chakrapath","85.342976","27.740071",False
+"22","Sinamangal","85.363813","27.691085",False
+"23","Nayapati","85.351381","27.765338",False
+"24","Bisnkhu","85.354204","27.616753",False
+"25","Kankrabari Dovan","85.458587","27.630033",False
+"26","Jamal","85.316003","27.708954",False
+"27","Tu Gate","85.296863","27.678859",False
+"28","Bauthali Chowk","85.239357","27.678707",False
+"29","Boshigaun","85.249227","27.677947",False
+"30","Machchhegaun","85.249656","27.671942",False
+"31","Kalopani","85.243305","27.698847",False
+"32","Tufan Chowk","85.289138","27.732736",False
+"33","Radha Krishna Chowk","85.28725","27.731216",False
+"34","Nepaltar","85.303441","27.741256",False
+"35","Manamaiju","85.312968","27.752574",False
+"36","Seshmati","85.300866","27.745054",False
+"37","Goldhunga","85.2946","27.746801",False
+"38","Dhitalchowk","85.284043","27.764423",False
+"39","Pirkun","85.298034","27.764878",False
+"40","Phutung","85.308333","27.759638",False
+"41","Purano Bus Park","85.312762","27.70584",False
+"42","Nagpokhari","85.328488","27.718745",False
+"43","Kirtipur","85.277388","27.675995",False
+"44","Dhobighat","85.318792","27.677677",True
+"45","Dakshinkali","85.291008","27.602843",False
+"46","Bhainsepati","85.304985","27.652835",False
+"47","Biruwa","85.390695","27.641743",False
+"48","Lamatar","85.390094","27.633379",False
+"49","Dharachour","85.377305","27.630793",False
+"50","Dobato","85.373614","27.628968",False
+"51","Thaiba","85.347951","27.625014",False
+"52","Chapagaun","85.324176","27.599916",False
+"53","Swayambhu","85.28253","27.717617",False
+"54","Medical Bus Stop","85.3027","27.71944",False
+"55","Gitanjali","85.304931","27.719516",False
+"56","Sorhakhutte","85.309137","27.720504",False
+"57","Ascol","85.313429","27.717768",False
+"58","Lainchaur","85.315317","27.718224",False
+"59","New Road","85.315232","27.707068",False
+"60","Narayanhiti","85.317335","27.713128",False
+"61","Durbar Marg","85.32006","27.713502",False
+"62","Freak Street","85.309876","27.710587",False
+"63","Ason","85.30818","27.705693",False
+"64","Indra Chowk","85.305759","27.702668",False
+"65","Hanumandhoka","85.307507","27.70452",False
+"66","Sankhamul","85.315442","27.688891",False
+"67","Lalitpur","85.325678","27.671146",False
+"68","Magargaon Bus Park","85.299878","27.649755",False
+"69","Bungamati","85.30404","27.628845",False
+"70","Friends Station","85.319919","27.612609",False
+"71","Nayabazar","85.278176","27.675982",False
+"72","Tu Ground","85.28509","27.679174",False
+"73","Lapsi Bot","85.28609","27.651943",False
+"74","Naagdaha","85.282142","27.650461",False
+"75","Paanityanki","85.278924","27.649282",False
+"76","Khahare","85.277679","27.647572",False
+"77","Mahadev Than","85.27828","27.640843",False
+"78","Chalnakhel","85.279567","27.638904",False
+"79","Bisankhu","85.354204","27.616753",False
+"80","Toukhel","85.357453","27.611407",False
+"81","Kittachaur","85.373309","27.610105",False
+"82","Godawari","85.378105","27.59499",False
+"83","Lankuri Bhanjyang","85.411551","27.615888",False
+"84","Mishra Station","85.386746","27.648586",False
+"85","Dandapauwa","85.363315","27.653432",False
+"86","Thankot","85.279748","27.674478",False
+"87","Bhaisepati Chowk","85.324433","27.647172",False
+"88","Gwarko Chowk","85.314043","27.656948",False
+"89","Hattiban","85.335507","27.64803",False
+"90","Samakhusi","85.317805","27.722275",False
+"91","Boudha","85.361854","27.721606",False
+"92","Gopi Krishna Hall","85.328873","27.71783",False
+"93","Dillibazaar","85.32684","27.698214",False
+"94","Putalisadak","85.322495","27.705878",False
+"95","Ratopul","85.335657","27.708875",False
+"96","Kamaladi","85.314654","27.710302",False
+"97","Durbarmarg","85.317656","27.712925",False
+"98","Baluwatar","85.333822","27.718365",False
+"99","Naya Baneswor","85.339353","27.723564",False
+"100","Pulchowk","85.318451","27.677764",True
+"101","Jhamsikhel","85.325211","27.676546",False
+"102","Lalitpur Mahanagarpalika","85.326972","27.674123",False
+"103","Kupandole","85.313884","27.680156",False
+"105","Patan Dhoka","85.325408","27.679246",False
+"106","Khumaltar","85.306912","27.639611",False
+"107","Harihar Bhawan","85.325978","27.687346",False
+"108","Lagankhel","85.326905","27.668363",True
+"109","Kupondole","85.313884","27.680156",True
+"110","Kumaripati","85.322091","27.677395",True
+"111","Pulchowk Engineering College","85.317863","27.67678",False
+"112","Gwarko","85.316525","27.659826",False
+"113","Thasikhel","85.310986","27.635105",True
+"114","Imadol","85.317409","27.641141",False
+"115","Satdobato","85.32506","27.65752",True
+"116","Ranipokhari","85.316677","27.709431",False
+"117","Tripureshwor","85.313383","27.705116",False
+"118","Kalimati","85.295369","27.70545",False
+"119","Gaushala","85.353564","27.699948",False
+"120","Gausala Chowk","85.353467","27.700027",False
+"121","Sallaghari","85.357278","27.703041",False
+"122","Budanilkantha","85.367882","27.78936",False
+"123","Gopi Krishna Movies","85.328621","27.708524",False
+"124","Newroad","85.318688","27.706207",False
+"125","Maitighar","85.324503","27.705681",False
+"126","Kamalpokhari","85.323487","27.712092",False
+"127","Shankhamul Chowk","85.316056","27.692931",False
+"128","Bishal Bazaar","85.312304","27.712468",False
+"129","Dhalku","85.322278","27.704781",False
+"130","Pulchowk Campus","85.31861","27.676523",False
+"131","Bhrikuti Mandap","85.325229","27.693104",False
+"132","Kumaripati Chowk","85.321552","27.678936",False
+"133","Kuleshwor","85.29664","27.686193",True
+"134","Narayan Gopal Chowk","85.329708","27.698743",False
+"135","Thamel","85.309764","27.716668",False
+"136","Pashupatinath","85.34777","27.71619",False
+"137","Maharajgunj Chowk","85.32892","27.742481",False
+"138","Ravi Bhawan","85.330552","27.723485",False
+"139","Jorpati","85.353763","27.714488",False
+"140","Battisputali","85.344568","27.706351",False
+"141","Chhauni","85.315433","27.701135",False
+"142","Gaurighat","85.313829","27.731622",False
+"143","Kanti Bal Hospital","85.314063","27.734057",False
+"144","Nepal Eye Hospital","85.313666","27.734171",False
+"145","Ratna Park","85.31478","27.700809",False
+"146","Baneswor","85.334699","27.686607",False
+"147","Ramshah Path","85.32335","27.70453",False
+"148","Bagdol","85.287355","27.663733",False
+"149","Harsha Chowk","85.292913","27.66118",False
+"150","Bhaisepati Gate","85.324454","27.642438",False
+"151","Sanepa","85.314792","27.684642",True
+"152","Khumaltar Chowk","85.308876","27.6376",False
+"153","Panga Dobato","85.280263","27.674881",False
+"154","Madhyapur Thimi","85.416617","27.669253",False
+"155","Chabahil","85.358001","27.71552",False
+"156","Golphutar","85.35462","27.724692",False
+"157","Sankhu","85.505041","27.705444",False
+"158","Gokarneshwor","85.401455","27.753125",False
+"159","Bishnumati Bridge","85.327977","27.725209",False
+"160","Jwagal","85.313793","27.690028",False
+"161","Bhatbhateni","85.342758","27.712842",False
+"162","Dallu Awas","85.288296","27.71619",False
+"163","Narayangopal Chowk","85.328768","27.693847",False
+"164","Chobhar","85.254834","27.653064",False
+"165","Guheshwori","85.308145","27.700646",False
+"166","Banepa","85.521236","27.629802",False
+"167","Bhurungkhel Chowk","85.343558","27.626286",False
+"168","Thapathali","85.32058","27.689548",True
+"169","Jwagal Chowk","85.31343","27.690287",False
+"170","Swoyambhu","85.291244","27.715194",False
+"171","Golfutar Chowk","85.355039","27.722087",False
+"172","Kuleshwor Chowk","85.298477","27.685741",False
+"173","Gokarna","85.407602","27.740501",False
+"174","Maharajgunj","85.335238","27.744988",False
+"175","Champadevi","85.370097","27.596834",False
+"176","Sorakhutte","85.309137","27.720504",False
+"177","Chapali","85.381328","27.782014",False
+"178","Kalanki_Chowk","85.27879","27.689972",False
+"179","Sundhara","85.314053","27.705881",False
+"180","Chandragiri","85.232161","27.671715",False
+"181","Shankhamul","85.312641","27.68839",False
+"182","Ganeshthan","85.307178","27.722918",False
+"183","Bhaisepati","85.324709","27.64234",False
+"184","Koteshwor","85.352878","27.678597",False
+"185","Shantinagar","85.322016","27.692313",False
+"186","Sanepa Chowk","85.312668","27.683942",False
+"187","Gaurighat Park","85.314033","27.734372",False
+"188","Gyaneshwor","85.329672","27.69436",False
+"189","Jagati","85.352755","27.696698",False
+"190","Balkhu","85.27869","27.692566",True
+"191","Chhauni Chowk","85.315415","27.700726",False
+"192","Thimi","85.379285","27.674327",False
+"193","Sundarijal","85.405195","27.795257",False
+"194","Mahalaxmisthan","85.325835","27.697529",False
+"195","Jawlakhel","85.317278","27.674146",True
+"196","Chundevi","85.335304","27.722029",False
+"197","Tribhuvan University","85.317043","27.683707",False
+"198","Budhanilkantha","85.367964","27.790441",False
+"199","Suryabinayak","85.411652","27.686019",False
+"200","Maitidevi Chowk","85.332156","27.704392",False
+"201","Rudreshwor Chowk","85.328401","27.704118",False
+"202","Bagmati_Bridge","85.32804","27.714592",False
+"203","Siddhi Park","85.298019","27.729343",False
+"204","Lazimpat Chowk","85.321148","27.71777",False
+"205","Lazimpat","85.324348","27.718556",False
+"206","Ratnapark","85.315529","27.706312",False
+"207","Tinkune","85.358804","27.694999",False
+"208","Dhalko","85.322526","27.705762",False
+"209","Shankhadhar Chowk","85.321605","27.679851",False
+"210","Minbhawan","85.318502","27.693288",False
+"211","Naya Baneshwor","85.342232","27.692891",False
+"212","Koteshwor Chowk","85.35648","27.682661",False
+"213","Anamnagar","85.324066","27.692415",False
+"214","Bhaktapur","85.428192","27.671692",False
+"215","Lainchaur Chowk","85.316842","27.718156",False
+"216","Jawlakhel Chowk","85.318347","27.676522",False
+"217","Chuchepati","85.31423","27.711988",False
+"218","Manbhawan","85.3175","27.6687",True
+"219","Star_Hospital","85.3029","27.6812",False
+"220","Sanepa_Height","85.3041","27.6809",False
+"221","Pipal_Bot","85.3101","27.7034",False
+"222","Jawlakhel_Police_Station","85.3127","27.6736",False
+"223","Central_Zoo","85.3118","27.6727",False

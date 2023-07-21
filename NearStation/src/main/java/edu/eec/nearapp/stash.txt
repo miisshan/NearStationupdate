@@ -1,0 +1,176 @@
+   private static void demoGraph() {
+        /*
+         * Build a demo graph.
+         */
+        //Edge toLocation = Edge.from(source,label,weight,destination)
+
+
+        Vertex lubhu = Vertex.from(1, 27.646882514723053f, 85.37105790960555f);
+        Vertex radisson = Vertex.from(2, 27.717740754210862f, 85.31636173627547f);
+        Edge toRadisson = Edge.from(lubhu.code(), "To_Radisson", 100f, radisson.code());
+
+
+        NearGraph nearGraph = NearGraph.create()
+                .addVertex(lubhu)
+                .addVertex(radisson)
+                .addEdge(toRadisson)
+                .setRoot(lubhu);
+
+        System.out.println("Graph : \n" + nearGraph.toString());
+
+        Vertex hattiban = Vertex.from(3,27.6504, 85.3369);
+        Vertex satdobato = Vertex.from(4,27.6515, 85.3278);
+        Edge toSatdobato = Edge.from(hattiban.code(),"To_Satdobato",200f, satdobato.code());
+        NearGraph g = NearGraph.create().addVertex(hattiban).addVertex(satdobato).addEdge(toSatdobato).setRoot(hattiban);
+
+        System.out.println("Graph 2 : \n" + g.toString());
+    }
+
+
+
+
+// Create an instance of WeightCalculator with the distance between source and neighbor
+//        WeightCalculator weightCalculator = new WeightCalculator(verticesArray[0],(verticesArray[1]));
+//
+//// Calculate the weight using the getWeightByDistance() method of WeightCalculator
+//        double weight = weightCalculator.getWeightByDistance();
+//
+//// Create the edge from source to neighbor using the calculated weight
+//        Edge e1 = Edge.from(verticesArray[0].code(), "edge1", weight, verticesArray[1].code());
+//
+//        NearGraph g = NearGraph.create().addVertex(verticesArray[0]).addVertex(verticesArray[1]).addEdge(e1).setRoot(verticesArray[0]);
+//
+//        System.out.println(g);
+
+
+
+
+
+
+
+       /**
+         * Demo Algorithm Run.
+         */
+    //    private static void bellmanFordTest() {
+    //        Vertex v1 = Vertex.from(1, 0.0f, 0.0f);
+    //        Vertex v2 = Vertex.from(2, 0.0f, 0.0f);
+    //        Vertex v3 = Vertex.from(3, 0.0f, 0.0f);
+    //        Vertex v4 = Vertex.from(4, 0.0f, 0.0f);
+    //        Vertex v5 = Vertex.from(5, 0.0f, 0.0f);
+    //        Vertex v6 = Vertex.from(6, 0.0f, 0.0f);
+    //        Edge v1ToV2 = Edge.from(v1.code(), "v1 to v2", 4.0f, v2.code());
+    //        Edge v1ToV4 = Edge.from(v1.code(), "v1 to v4", 9.0f, v4.code());
+    //        Edge v2ToV3 = Edge.from(v2.code(), "v2 to v3", -1.0f, v3.code());
+    //        Edge v3ToV6 = Edge.from(v3.code(), "v3 to v6", 3.0f, v5.code());
+    //        Edge v4ToV3 = Edge.from(v4.code(), "v4 to v3", 2.0f, v3.code());
+    //        Edge v4ToV5 = Edge.from(v4.code(), "v4 to v5", -5.0f, v5.code());
+    //        Edge v5ToV6 = Edge.from(v5.code(), "v5 to v6", 0.0f, v6.code());
+    //
+    //        NearGraph nearGraph = NearGraph.create()
+    //                .addVertex(v1).addVertex(v2).addVertex(v3).addVertex(v4)
+    //                .addVertex(v5).addVertex(v6).setRoot(v1)
+    //                .addEdge(v1ToV2).addEdge(v1ToV4).addEdge(v2ToV3)
+    //                .addEdge(v3ToV6).addEdge(v4ToV3).addEdge(v4ToV5)
+    //                .addEdge(v5ToV6);
+    //
+    //        System.out.println("Graph: " + nearGraph.toString());
+    //
+    //        Solution solution = new BellmanFordAlgorithm().execute(nearGraph);
+    //        Result result = solution.minimumDistance();
+    //        System.out.println("Result: \n" + result.toString());
+    //    }
+    //
+    //}
+
+
+
+
+
+
+
+
+  for (Station station : stations) {
+            int id = station.getId();
+            double latitude = station.getLatitude();
+            double longitude = station.getLongitude();
+            String location = station.getLocation();
+
+            Vertex vertex = new Vertex(id, latitude, longitude, location);
+            vertices.add(vertex);
+        }
+
+       //To import all the stations
+
+
+
+
+
+
+
+
+
+
+
+       // Iterate over the neighbor mappings in the neighborsMap
+       //        for (Map.Entry<String, Set<String>> entry : neighborsMap.entrySet()) {
+       //            String sourceVertex = entry.getKey();
+       //            Set<String> neighbors = entry.getValue();
+       //
+       //            // Get the index of the source vertex in verticesArray
+       //            int sourceIndex = getVertexIndex(verticesArray, sourceVertex);
+       //
+       //            // Iterate over the neighbors and create the edges
+       //            for (String neighbor : neighbors) {
+       //                // Get the index of the neighbor vertex in verticesArray
+       //                int neighborIndex = getVertexIndex(verticesArray, neighbor);
+       //
+       //                // Create an instance of WeightCalculator with the distance between source and neighbor
+       //                double distance = RoutingUtils.distanceInKilometers(
+       //                        verticesArray[sourceIndex].getLat(), verticesArray[sourceIndex].getLon(),
+       //                        verticesArray[neighborIndex].getLat(), verticesArray[neighborIndex].getLon());
+       //                WeightCalculator weightCalculator = new WeightCalculator(distance);
+       //
+       //                // Calculate the weight using the getWeightByFare() method of WeightCalculator
+       //                double weight = weightCalculator.getWeightByFare();
+       //
+       //                // Create the edge from source to neighbor using the calculated weight
+       //                Edge edge = Edge.from(verticesArray[sourceIndex].code(), "edge" + counter, weight, verticesArray[neighborIndex].code());
+       //
+       //                // Add the edge to the list
+       //                edges.add(edge);
+       //                counter++;
+       //            }
+       //            System.out.println("EdgeList : "+edges);
+       //        }
+
+
+       // Create a list to hold the edges
+               //        List<Edge> edges = new ArrayList<>();
+               //        int counter = 1;
+               //
+               //// Iterate over the neighbor mappings in the neighborsMap
+               //        for (Map.Entry<String, Set<String>> entry : neighborsMap.entrySet()) {
+               //            String sourceVertex = entry.getKey();
+               //            Set<String> neighbors = entry.getValue();
+               //
+               //            // Get the index of the source vertex in verticesArray
+               //            int sourceIndex = getVertexIndex(verticesArray, sourceVertex);
+               //
+               //            // Iterate over the neighbors and create the edges
+               //            for (String neighbor : neighbors) {
+               //                // Get the index of the neighbor vertex in verticesArray
+               //                int neighborIndex = getVertexIndex(verticesArray, neighbor);
+               //
+               //                // Create an instance of WeightCalculator with the distance between source and neighbor
+               //                WeightCalculator weightCalculator = new WeightCalculator(verticesArray[sourceIndex], (verticesArray[neighborIndex]));
+               //
+               //                // Calculate the weight using weight of Choice
+               //                double weight = weightCalculator.getWeightByFare();
+               //
+               //                // Create the edge from source to neighbor using the calculated weight
+               //                Edge edge = Edge.from(verticesArray[sourceIndex].code(), "edge"+counter, weight, verticesArray[neighborIndex].code());
+               //
+               //                // Add the edge to the list
+               //                edges.add(edge);
+               //                counter++;
+               //            }
