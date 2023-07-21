@@ -1,4 +1,5 @@
 package edu.eec.db;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -40,8 +41,8 @@ public class DbFunctions {
         return conn;
     }
 
-    public static List < Station > fetchStations(Connection conn, String table_name) {
-        List < Station > stations = new ArrayList < > ();
+    public static List<Station> fetchStations(Connection conn, String table_name) {
+        List<Station> stations = new ArrayList<>();
 
         try {
             String query = String.format("SELECT * FROM %s", table_name);
@@ -54,7 +55,7 @@ public class DbFunctions {
                 double latitude = rs.getDouble("Latitude");
                 double longitude = rs.getDouble("Longitude");
                 boolean isStation = rs.getBoolean("isStation");
-                Station station = new Station(id, location, latitude, longitude,isStation);
+                Station station = new Station(id, location, latitude, longitude, isStation);
                 stations.add(station);
             }
 
@@ -68,29 +69,28 @@ public class DbFunctions {
     }
 
     //Fetch from Route database
-    public static List < Route > fetchRoutes(Connection conn, String table_name){
-        List <Route> routes = new ArrayList<>();
+    public static List<Route> fetchRoutes(Connection conn, String table_name) {
+        List<Route> routes = new ArrayList<>();
 
-        try{
-            String query = String.format("SELECT * from %s",table_name);
+        try {
+            String query = String.format("SELECT * from %s", table_name);
             Statement statement = conn.createStatement();
             ResultSet rs = statement.executeQuery(query);
 
-            while (rs.next()){
+            while (rs.next()) {
                 int id = rs.getInt("id");
                 String routename = rs.getString("Routename");
                 String start = rs.getString("Start");
                 String end = rs.getString("End");
                 //First passing as string, converting it later to array.
-                String routelistString= rs.getString("Routelist");
+                String routelistString = rs.getString("Routelist");
                 String[] routelist = routelistString.split(",");
-                Route route = new Route(id,routename,start,end,routelist);
+                Route route = new Route(id, routename, start, end, routelist);
                 routes.add(route);
             }
             rs.close();
             statement.close();
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
         return routes;

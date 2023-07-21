@@ -13,11 +13,11 @@ public class Result {
     /**
      * Source vertex.
      */
-     final Vertex source;
+    final Vertex source;
 
-     final List<Edge> edge;
+    final List<Edge> edge;
 
-     final Vertex destination;
+    final Vertex destination;
 
     /**
      * Default constructor.
@@ -27,7 +27,6 @@ public class Result {
         this.edge = edge;
         this.destination = destination;
     }
-
 
 
     /**
@@ -45,7 +44,8 @@ public class Result {
     public void printEdge() {
         System.out.println(this.edge);
     }
-    public Boolean addEdge(Edge edge){
+
+    public Boolean addEdge(Edge edge) {
         return this.edge.add(edge);
     }
 

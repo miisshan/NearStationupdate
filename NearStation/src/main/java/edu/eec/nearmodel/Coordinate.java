@@ -58,12 +58,12 @@ public class Coordinate {
     }
 
     public String getKey() {
-        List < Double > items = Arrays.asList(x, y);
+        List<Double> items = Arrays.asList(x, y);
         Collections.sort(items);
         return items.stream().map(Object::toString).collect(Collectors.joining("_"));
     }
 
-    public static Coordinate of (double x, double y) {
+    public static Coordinate of(double x, double y) {
         return new Coordinate(x, y);
     }
 

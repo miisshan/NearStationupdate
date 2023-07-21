@@ -9,6 +9,7 @@ public class Location {
     private final String description;
     private final double latitude;
     private final double longitude;
+
     /**
      * Default Constructor
      **/

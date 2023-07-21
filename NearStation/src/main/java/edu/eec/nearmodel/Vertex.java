@@ -21,7 +21,7 @@ public class Vertex {
     private String label;
 
     /**
-    *Is station
+     * Is station
      */
     private boolean isStation;
 
@@ -41,7 +41,7 @@ public class Vertex {
      */
 
 
-    public Vertex(int id, double lat, double lon, String location,boolean isStation) {
+    public Vertex(int id, double lat, double lon, String location, boolean isStation) {
         this.id = id;
         this.lat = lat;
         this.lon = lon;
@@ -74,7 +74,7 @@ public class Vertex {
         return this.label;
     }
 
-    public boolean getIsStation(){
+    public boolean getIsStation() {
         return this.isStation;
     }
 
@@ -83,11 +83,11 @@ public class Vertex {
         return Conversion.toJson(this);
     }
 
-    public static Vertex from(int id, double lat, double lon, String location,boolean isStation) {
-        return new Vertex(id, lat, lon, location,isStation);
+    public static Vertex from(int id, double lat, double lon, String location, boolean isStation) {
+        return new Vertex(id, lat, lon, location, isStation);
     }
 
     public static Vertex empty() {
-        return new Vertex(0, 0.0, 0.0, "",false);
+        return new Vertex(0, 0.0, 0.0, "", false);
     }
 }

@@ -1,4 +1,5 @@
 package edu.eec.nearapp;
+
 import edu.eec.nearcontroller.Algorithm;
 import edu.eec.nearcontroller.BellmanFordAlgorithm;
 import edu.eec.nearcontroller.Result;
@@ -26,7 +27,7 @@ public class NearApp {
             String location = station.getLocation();
             boolean isStation = station.isStation();
             // Putting the values of station into a vertex
-            Vertex vertex = new Vertex(id, latitude, longitude, location,isStation);
+            Vertex vertex = new Vertex(id, latitude, longitude, location, isStation);
             vertices.add(vertex);
         }
         // Selected Stations near Jawlakhel Area:
@@ -56,7 +57,8 @@ public class NearApp {
                 "Jawlakhel_Police_Station",
                 "Central_Zoo",
                 "Jhamsikhel",
-                "Kalanki_Chowk"
+                "Kalanki_Chowk",
+                "Heritage_Garden"
         };
 
         Vertex[] verticesArray = new Vertex[locationStrings.length];
@@ -77,18 +79,19 @@ public class NearApp {
             addNeighbor(neighborsMap, "Satdobato", "Lagankhel", "Mahalaxmi");
             addNeighbor(neighborsMap, "Pulchowk", "Jwagal", "Jawlakhel");
             addNeighbor(neighborsMap, "Jwagal", "Kupondole", "Pulchowk");
-            addNeighbor(neighborsMap,"Star_Hospital","Sanepa","Jawlakhel","Sanepa_Height");
-            addNeighbor(neighborsMap,"Sanepa_Height","Star_Hospital","Dhobighat","Sanepa");
-            addNeighbor(neighborsMap,"Pipal_Bot","Lagankhel","Pulchowk");
-            addNeighbor(neighborsMap,"Jawlakhel_Police_Station","Jawlakhel","Central_Zoo","Pulchowk");
-            addNeighbor(neighborsMap,"Central_Zoo","Jawlakhel","Jhamsikhel");
-            addNeighbor(neighborsMap, "Sanepa", "Balkhu", "Dhobighat","Jhamsikhel");
+            addNeighbor(neighborsMap, "Star_Hospital", "Sanepa", "Jawlakhel", "Sanepa_Height");
+            addNeighbor(neighborsMap, "Sanepa_Height", "Star_Hospital", "Dhobighat", "Sanepa");
+            addNeighbor(neighborsMap, "Pipal_Bot", "Lagankhel", "Pulchowk");
+            addNeighbor(neighborsMap, "Jawlakhel_Police_Station", "Jawlakhel", "Central_Zoo", "Pulchowk");
+            addNeighbor(neighborsMap, "Central_Zoo", "Jawlakhel", "Jhamsikhel");
+            addNeighbor(neighborsMap, "Sanepa", "Balkhu", "Dhobighat", "Jhamsikhel", "Heritage_Garden");
             addNeighbor(neighborsMap, "Mahalaxmi", "Satdobato", "Lagankhel");
             addNeighbor(neighborsMap, "Thasikhel", "Mahalaxmi", "Ekantakuna");
             addNeighbor(neighborsMap, "Balkhu", "Sanepa", "Kuleshwor", "Khasibazaar");
             addNeighbor(neighborsMap, "Kupondole", "Jwagal", "Thapathali");
-            addNeighbor(neighborsMap,"Kalanki_Mandir","Khasibazaar");
-            addNeighbor(neighborsMap,"Kalanki_Chowk","Kalanki_Mandir");
+            addNeighbor(neighborsMap, "Kalanki_Mandir", "Khasibazaar");
+            addNeighbor(neighborsMap, "Kalanki_Chowk", "Kalanki_Mandir");
+
         }
 
         // Print the vertices and their immediate neighbors
@@ -150,11 +153,10 @@ public class NearApp {
             return;
         }
 
-
-
         Algorithm algorithm = new BellmanFordAlgorithm();
         Solution solution = algorithm.execute(graph);
         Result result = solution.minimumDistance();
+
     }
 
     private static void addNeighbor(Map<String, Set<String>> neighborsMap, String vertex, String... neighbors) {

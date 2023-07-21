@@ -11,13 +11,13 @@ public class NearGraph {
     /**
      * Adjacency list representation of Graph.
      */
-    private final Map < Vertex, Set < Edge >> adjacentList;
+    private final Map<Vertex, Set<Edge>> adjacentList;
 
     /**
      * Default Constructor.
      */
     public NearGraph() {
-        this.adjacentList = new HashMap < > ();
+        this.adjacentList = new HashMap<>();
     }
 
     /**
@@ -28,7 +28,10 @@ public class NearGraph {
         return this;
     }
 
-    public Vertex getMainRoot() {return this.mainRoot;}
+    public Vertex getMainRoot() {
+        return this.mainRoot;
+    }
+
     public NearGraph setMainRoot(Vertex vertex) {
         this.mainRoot = vertex;
         return this;
@@ -38,11 +41,11 @@ public class NearGraph {
         return this.root;
     }
 
-    public Set < Vertex > vertices() {
+    public Set<Vertex> vertices() {
         return this.adjacentList.keySet();
     }
 
-    public Set < Edge > edges() {
+    public Set<Edge> edges() {
         return this.adjacentList.values().stream().flatMap(Collection::stream).collect(Collectors.toSet());
     }
 
@@ -73,7 +76,7 @@ public class NearGraph {
                 .anyMatch(v -> Objects.equals(v.code(), code));
     }
 
-    public Optional < Vertex > vertexByLabel(String label) {
+    public Optional<Vertex> vertexByLabel(String label) {
         return this.adjacentList.keySet().stream().filter(v -> Objects.equals(v.code(), label)).findAny();
     }
 
@@ -84,9 +87,9 @@ public class NearGraph {
         /**
          * Perform add operation of the given edge.
          */
-        Optional < Vertex > source = vertexByLabel(newEdge.getSource());
+        Optional<Vertex> source = vertexByLabel(newEdge.getSource());
         if (source.isPresent()) {
-            Set < Edge > edges = this.adjacentList.getOrDefault(source.get(), emptyEdges());
+            Set<Edge> edges = this.adjacentList.getOrDefault(source.get(), emptyEdges());
             edges.add(newEdge);
         }
         return this;
@@ -120,8 +123,8 @@ public class NearGraph {
     /**
      * The empty edges.
      */
-    private Set < Edge > emptyEdges() {
-        return new HashSet < > ();
+    private Set<Edge> emptyEdges() {
+        return new HashSet<>();
     }
 
     /**

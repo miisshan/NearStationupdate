@@ -1,4 +1,5 @@
 package edu.eec.db;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import edu.eec.nearmodel.Coordinate;
@@ -12,7 +13,7 @@ public class Station {
     private boolean isStation;
 
 
-    public Station(int id, String location, double latitude, double longitude , boolean isStation) {
+    public Station(int id, String location, double latitude, double longitude, boolean isStation) {
         this.id = id;
         this.location = location;
         this.latitude = latitude;
@@ -38,7 +39,7 @@ public class Station {
         this.location = location;
     }
 
-    public boolean isStation(){
+    public boolean isStation() {
         return isStation;
     }
 

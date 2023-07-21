@@ -9,20 +9,20 @@ import java.util.stream.Collectors;
 public class SerializedGraph {
 
     private final Vertex root;
-    private final Set < Vertex > vertexSet;
-    private final Set < Edge > edgeSet;
+    private final Set<Vertex> vertexSet;
+    private final Set<Edge> edgeSet;
 
-    public SerializedGraph(Vertex root, Set < Vertex > vertexSet, Set < Edge > edgeSet) {
+    public SerializedGraph(Vertex root, Set<Vertex> vertexSet, Set<Edge> edgeSet) {
         this.root = root;
         this.vertexSet = vertexSet;
         this.edgeSet = edgeSet;
     }
 
-    public Set < Vertex > getVertexSet() {
+    public Set<Vertex> getVertexSet() {
         return vertexSet;
     }
 
-    public Set < Edge > getEdgeSet() {
+    public Set<Edge> getEdgeSet() {
         return edgeSet;
     }
 
@@ -37,7 +37,7 @@ public class SerializedGraph {
     /**
      * Factory for the Graph generated from map data.
      */
-    public static SerializedGraph from(Vertex root, Map < Vertex, Set < Edge >> nearGraph) {
+    public static SerializedGraph from(Vertex root, Map<Vertex, Set<Edge>> nearGraph) {
         return new SerializedGraph(
                 root,
                 nearGraph.keySet(),

@@ -1,6 +1,9 @@
 package edu.eec.nearmodel;
+
 import edu.eec.nearutils.RoutingUtils;
+
 import java.lang.Math;
+
 public class WeightCalculator {
     private static double bus_fare;
     public static double weight;
@@ -36,7 +39,8 @@ public class WeightCalculator {
 
         return weight;
     }
-//    public double getWeightByWaitingTime() {
+
+    //    public double getWeightByWaitingTime() {
 //        weight = waitingtime;
 //        return weight;
 //    }

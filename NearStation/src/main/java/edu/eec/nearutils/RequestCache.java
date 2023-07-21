@@ -10,30 +10,30 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 public class RequestCache {
-    
+
     private static final ConcurrentHashMap<String, Double> distanceCache = new ConcurrentHashMap<>();
-    
+
     /**
      * Update the distance value.
      */
     public static void update(String key, Double value) {
         distanceCache.put(key, value);
     }
-    
+
     /**
      * Check if the entry with given key is present or not.
      */
     public static boolean isKeyPresent(String key) {
         return distanceCache.containsKey(key);
     }
-    
+
     /**
      * Returns the distance value.
      */
     public static Double valueOf(String key) {
         return distanceCache.get(key);
     }
-    
+
     /**
      * Generates the DP key for the given coordinates.
      *
@@ -50,7 +50,7 @@ public class RequestCache {
         Collections.sort(values);
         return values.stream().map(Object::toString).collect(Collectors.joining("_"));
     }
-    
+
     /**
      * Returns the generated key for the cache entry.
      *
@@ -61,12 +61,12 @@ public class RequestCache {
     public static String generateKey(Location base, Location delivery) {
         return generateKey(base.getCoordinate(), delivery.getCoordinate());
     }
-    
+
     /**
      * Returns the key from the list of locations, the first is source, the second is destination.
      */
     public static String generateKey(List<Location> locations) {
         return generateKey(locations.get(0), locations.get(1));
     }
-    
+
 }

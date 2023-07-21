@@ -1,4 +1,5 @@
 package edu.eec.nearapp;
+
 import edu.eec.nearmodel.Edge;
 import edu.eec.nearmodel.NearGraph;
 import edu.eec.nearmodel.Vertex;
